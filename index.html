@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your weather app</title>
+  </head>
+  <body>
+    <h1>What is the weather in...</h1>
+    <form>
+      <input
+        type="search"
+        placeholder="Enter and city.."
+        class="weatherForm"
+        required
+      />
+      <input type="submit" value="Search" class="weatherForm" required />
+    </form>
+    <div class="weatherDetails">
+      <div class="weatherDetails-emoji">☀️</div>
+      <div class="weatherDetails-description">Clear Sky</div>
+      <div class="weatherDetails-temp">Temperature</div>
+      <div class="weatherDetails-degrees">12°C</div>
+      <div class="weatherDetails-minmax">Max.: 13° Min.: 12°</div>
+    </div>
+    <ul class="weatherDetailsExtra">
+      <li>Wind</li>
+      <div class="wind-emoji">🌬️</div>
+      <div class="wind-value">2km/h</div>
+      <li>Precipitation</li>
+      <div class="precipitation-emoji">💧</div>
+      <div class="precipittaion-value">0%</div>
+      <li>Humidity</li>
+      <div class="humidity-emoji">🌀</div>
+      <div class="humidity-value">65%</div>
+    </ul>
+    <div class="weatherUpdate-date">Updated, 7 January 2024 at 14:59</div>
+    <div class="forecastDaily"></div>
+    <div class="forecastDaily-details">Today, Sunday, 7 January 2024</div>
+    <ul class="forecastDaylyDetails">
+      <h2>Daily</h2>
+      <li>8h</li>
+      <ul>
+        <li>Wind</li>
+        <div class="wind-emoji">🌬️</div>
+        <div class="wind-value">2km/h</div>
+        <li>Precipitation</li>
+        <div class="precipitation-emoji">💧</div>
+        <div class="precipittaion-value">0%</div>
+        <li>Humidity</li>
+        <div class="humidity-emoji">🌀</div>
+        <div class="humidity-value">65%</div>
+      </ul>
+      <li>12h</li>
+      <ul>
+        <li>Wind</li>
+        <div class="wind-emoji">🌬️</div>
+        <div class="wind-value">2km/h</div>
+        <li>Precipitation</li>
+        <div class="precipitation-emoji">💧</div>
+        <div class="precipittaion-value">0%</div>
+        <li>Humidity</li>
+        <div class="humidity-emoji">🌀</div>
+        <div class="humidity-value">65%</div>
+      </ul>
+      <li>16h</li>
+      <ul>
+        <li>Wind</li>
+        <div class="wind-emoji">🌬️</div>
+        <div class="wind-value">2km/h</div>
+        <li>Precipitation</li>
+        <div class="precipitation-emoji">💧</div>
+        <div class="precipittaion-value">0%</div>
+        <li>Humidity</li>
+        <div class="humidity-emoji">🌀</div>
+        <div class="humidity-value">65%</div>
+      </ul>
+      <li>20h</li>
+      <ul>
+        <li>Wind</li>
+        <div class="wind-emoji">🌬️</div>
+        <div class="wind-value">2km/h</div>
+        <li>Precipitation</li>
+        <div class="precipitation-emoji">💧</div>
+        <div class="precipittaion-value">0%</div>
+        <li>Humidity</li>
+        <div class="humidity-emoji">🌀</div>
+        <div class="humidity-value">65%</div>
+      </ul>
+      <li>24h</li>
+      <ul>
+        <li>Wind</li>
+        <div class="wind-emoji">🌬️</div>
+        <div class="wind-value">2km/h</div>
+        <li>Precipitation</li>
+        <div class="precipitation-emoji">💧</div>
+        <div class="precipittaion-value">0%</div>
+        <li>Humidity</li>
+        <div class="humidity-emoji">🌀</div>
+        <div class="humidity-value">65%</div>
+      </ul>
+      <li>4h</li>
+      <ul>
+        <li>Wind</li>
+        <div class="wind-emoji">🌬️</div>
+        <div class="wind-value">2km/h</div>
+        <li>Precipitation</li>
+        <div class="precipitation-emoji">💧</div>
+        <div class="precipittaion-value">0%</div>
+        <li>Humidity</li>
+        <div class="humidity-emoji">🌀</div>
+        <div class="humidity-value">65%</div>
+      </ul>
+    </ul>
+    <div class="forecastWeekly">
+      <h2>Weekly</h2>
+      <ul>
+        <li>Sunday</li>
+        <ul>
+          <li>Wind</li>
+          <div class="wind-emoji">🌬️</div>
+          <div class="wind-value">2km/h</div>
+          <li>Precipitation</li>
+          <div class="precipitation-emoji">💧</div>
+          <div class="precipittaion-value">0%</div>
+          <li>Humidity</li>
+          <div class="humidity-emoji">🌀</div>
+          <div class="humidity-value">65%</div>
+        </ul>
+        <li>Monday</li>
+        <ul>
+          <li>Wind</li>
+          <div class="wind-emoji">🌬️</div>
+          <div class="wind-value">2km/h</div>
+          <li>Precipitation</li>
+          <div class="precipitation-emoji">💧</div>
+          <div class="precipittaion-value">0%</div>
+          <li>Humidity</li>
+          <div class="humidity-emoji">🌀</div>
+          <div class="humidity-value">65%</div>
+        </ul>
+        <li>Tuesday</li>
+        <ul>
+          <li>Wind</li>
+          <div class="wind-emoji">🌬️</div>
+          <div class="wind-value">2km/h</div>
+          <li>Precipitation</li>
+          <div class="precipitation-emoji">💧</div>
+          <div class="precipittaion-value">0%</div>
+          <li>Humidity</li>
+          <div class="humidity-emoji">🌀</div>
+          <div class="humidity-value">65%</div>
+        </ul>
+        <li>Wednesday</li>
+        <ul>
+          <li>Wind</li>
+          <div class="wind-emoji">🌬️</div>
+          <div class="wind-value">2km/h</div>
+          <li>Precipitation</li>
+          <div class="precipitation-emoji">💧</div>
+          <div class="precipittaion-value">0%</div>
+          <li>Humidity</li>
+          <div class="humidity-emoji">🌀</div>
+          <div class="humidity-value">65%</div>
+        </ul>
+        <li>Thursday</li>
+        <ul>
+          <li>Wind</li>
+          <div class="wind-emoji">🌬️</div>
+          <div class="wind-value">2km/h</div>
+          <li>Precipitation</li>
+          <div class="precipitation-emoji">💧</div>
+          <div class="precipittaion-value">0%</div>
+          <li>Humidity</li>
+          <div class="humidity-emoji">🌀</div>
+          <div class="humidity-value">65%</div>
+        </ul>
+        <li>Friday</li>
+        <ul>
+          <li>Wind</li>
+          <div class="wind-emoji">🌬️</div>
+          <div class="wind-value">2km/h</div>
+          <li>Precipitation</li>
+          <div class="precipitation-emoji">💧</div>
+          <div class="precipittaion-value">0%</div>
+          <li>Humidity</li>
+          <div class="humidity-emoji">🌀</div>
+          <div class="humidity-value">65%</div>
+        </ul>
+        <li>Saturday</li>
+        <ul>
+          <li>Wind</li>
+          <div class="wind-emoji">🌬️</div>
+          <div class="wind-value">2km/h</div>
+          <li>Precipitation</li>
+          <div class="precipitation-emoji">💧</div>
+          <div class="precipittaion-value">0%</div>
+          <li>Humidity</li>
+          <div class="humidity-emoji">🌀</div>
+          <div class="humidity-value">65%</div>
+        </ul>
+      </ul>
+    </div>
+    <footer>
+      This project was coded by <a href="">Ana Borges</a> and is on
+      <a href="">GitHub</a> and hosted on <a href="">Netlify</a>
+    </footer>
+  </body>
+</html>
