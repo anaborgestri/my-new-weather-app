@@ -1,0 +1,49 @@
+body {
+  background-color: #f9f7fe;
+}
+header {
+  background-color: white;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+.weatherApp-container {
+  background-color: white;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+div.forecastDaily-details {
+  background-color: white;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
+ul.weatherDetailsExtra {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+li.forecastDaylyHours {
+  display: inline-block;
+  list-style: none;
+}
+li.forecastDays {
+  display: inline-block;
+  list-style: none;
+}
+ul.forecastDaylyDetails {
+  background-color: white;
+  max-width: 800px;
+  display: block;
+  margin: 0 auto;
+}
+div.forecastWeekly {
+  background-color: white;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+}
