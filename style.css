@@ -1,11 +1,19 @@
 body {
   background-color: #f9f7fe;
+  font-family: "Exo 2", sans-serif;
 }
 header {
   background-color: white;
   max-width: 600px;
   display: block;
   margin: 0 auto;
+}
+ul {
+  padding: 30px 10px 30px 10px;
+}
+li {
+  list-style: none;
+  text-align: center;
 }
 .weatherApp-container {
   background-color: white;
@@ -19,31 +27,98 @@ div.forecastDaily-details {
   display: block;
   margin: 0 auto;
 }
+ul.forecastDaylyDetails {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+}
 ul.weatherDetailsExtra {
   display: flex;
   list-style: none;
   justify-content: space-between;
 }
+
 li.forecastDaylyHours {
   display: inline-block;
+  justify-content: space-between;
   list-style: none;
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 20px;
+}
+li.wind {
+  padding: 20px 0px 20px 0px;
+}
+li.humidity {
+  padding: 20px 0px 20px 0px;
+}
+li.precipitation {
+  padding: 20px 0px 20px 0px;
 }
 li.forecastDays {
   display: inline-block;
   list-style: none;
-}
-ul.forecastDaylyDetails {
   background-color: white;
-  max-width: 800px;
-  display: block;
-  margin: 0 auto;
+  padding-top: 20px;
+  border-radius: 20px;
 }
+
 div.forecastWeekly {
-  background-color: white;
-  max-width: 1000px;
+  max-width: 600px;
   display: block;
   margin: 0 auto;
 }
 footer {
   text-align: center;
+}
+div.button-container {
+  display: flex;
+  justify-content: center;
+}
+button.daily-button {
+  position: relative;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 2px;
+  margin-right: -2.4px;
+  margin-top: 20px;
+  line-height: 13px;
+  background-color: #e9d2fd;
+  border: 2px solid #885df1;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border-right: none;
+  border-radius: 50px 0px 0px 50px;
+  font-weight: bolder;
+}
+button.weekly-button {
+  position: relative;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 2px;
+  margin-right: -2.4px;
+  margin-top: 20px;
+  line-height: 13px;
+  background-color: #e9d2fd;
+  border: 2px solid #885df1;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border-left: none;
+  border-radius: 0px 50px 50px 0px;
+  font-weight: bolder;
+}
+button.weekly-button:hover {
+  background-color: #885df1;
+  font-style: white;
+  cursor: pointer;
+  color: white;
+}
+button.daily-button:hover {
+  background-color: #885df1;
+  font-style: white;
+  cursor: pointer;
+  color: white;
 }
