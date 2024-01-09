@@ -4,21 +4,23 @@ body {
 }
 header {
   background-color: white;
-  max-width: 600px;
+  max-width: 450px;
   display: block;
   margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 50px;
 }
 h1 {
   text-align: center;
 }
 .weatherForm {
   display: inline-flex;
+  font-family: "Exo 2", sans-serif;
 }
 #form-search-city {
-  padding: 10px;
   width: 75%;
   position: relative;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Exo 2", sans-serif;
   margin: 20px -2px 20px 10px;
   background-color: #f9f7fe;
@@ -31,43 +33,44 @@ h1 {
 }
 #form-button {
   position: relative;
-  padding: 10px;
   width: 20%;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Exo 2", sans-serif;
   margin: 20px 10px 20px -2px;
   background-color: #e9d2fd;
   border: 2px solid #885df1;
-  padding: 10px 30px;
+  padding: 10px 10px;
   box-sizing: border-box;
   border-left: none;
   border-radius: 0px 50px 50px 0px;
   font-weight: bolder;
 }
-.weatherDetails {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-  margin: 0 20px 0 20px;
-}
 .city {
   font-size: 50px;
   font-weight: bold;
   color: black;
-  text-align: center;
+  margin-left: 50px;
+  padding: 10px;
 }
+.weatherDetails {
+  display: flex;
+  justify-content: space-around;
+}
+
 .weatherDetails-emoji {
   position: relative;
-  font-size: 100px;
+  font-size: 95px;
 }
 .weatherDetails-description {
   position: absolute;
   font-size: 15px;
-  margin-right: -100px;
+  color: rgba(39, 33, 66, 0.4);
+  margin-left: 35px;
 }
 .weatherDetails-temp {
+  margin-top: 25px;
   font-size: 15px;
   font-weight: bold;
   color: rgba(39, 33, 66, 0.4);
@@ -106,9 +109,11 @@ li {
 }
 .weatherApp-container {
   background-color: white;
-  max-width: 600px;
+  max-width: 450px;
   display: block;
   margin: 0 auto;
+  border-radius: 15px;
+  margin-top: 10px;
 }
 ul.weatherDetailsExtra {
   display: flex;
@@ -117,12 +122,14 @@ ul.weatherDetailsExtra {
   font-size: 15px;
   font-weight: bold;
   color: rgba(39, 33, 66, 0.4);
+  margin: 0px 40px 0px 50px;
 }
 div.forecastDaily-details {
-  background-color: white;
-  max-width: 600px;
+  max-width: 450px;
   display: block;
   margin: 0 auto;
+  text-align: center;
+  margin-top: 10px;
 }
 ul.forecastDaylyDetails {
   max-width: 600px;
@@ -132,7 +139,6 @@ ul.forecastDaylyDetails {
 
 li.forecastDaylyHours {
   display: none;
-
   justify-content: space-between;
   list-style: none;
   background-color: white;
@@ -150,13 +156,15 @@ li.precipitation {
   padding: 20px 0px 20px 0px;
 }
 li.forecastDays {
-  display: none;
+  display: inline-block;
   list-style: none;
   background-color: white;
   padding-top: 20px;
   border-radius: 20px;
 }
-
+img.forecastWeekly.humidity {
+  width: 10px;
+}
 div.forecastWeekly {
   max-width: 600px;
   display: block;
