@@ -170,15 +170,3 @@ div.forecastWeekly {
 footer {
   text-align: center;
 }
-button.weekly-button:hover {
-  background-color: #885df1;
-  font-style: white;
-  cursor: pointer;
-  color: white;
-}
-button.daily-button:hover {
-  background-color: #885df1;
-  font-style: white;
-  cursor: pointer;
-  color: white;
-}
