@@ -20,19 +20,31 @@
           type="search"
           placeholder="Location"
           class="weatherForm"
+          id="form-search-city"
           required
         />
-        <input type="submit" value="Search" class="weatherForm" required />
+        <input
+          type="submit"
+          value="Search"
+          class="weatherForm"
+          id="form-button"
+          required
+        />
       </form>
     </header>
     <div class="weatherApp-container">
       <h1>Tomar</h1>
       <div class="weatherDetails">
-        <div class="weatherDetails-emoji">☀️</div>
-        <div class="weatherDetails-description">Clear Sky</div>
-        <div class="weatherDetails-temp">Temperature</div>
-        <div class="weatherDetails-degrees">12°C</div>
-        <div class="weatherDetails-minmax">Max.: 13° Min.: 12°</div>
+        <div class="weatherDetails-emoji">
+          ☀️ <br />
+          <span>Clear sky</span>
+        </div>
+        <div class="weatherDetails-temp">
+          Temperature
+          <br />
+          <span class="weatherDetails-degrees">12°C</span>
+          <span class="weatherDetails-minmax">Max.: 13° Min.: 12°</span>
+        </div>
       </div>
       <ul class="weatherDetailsExtra">
         <li>

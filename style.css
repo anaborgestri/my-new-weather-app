@@ -8,6 +8,45 @@ header {
   display: block;
   margin: 0 auto;
 }
+.weatherDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.weatherForm {
+  display: inline-flex;
+}
+#form-search-city {
+  padding: 10px;
+  width: 75%;
+  position: relative;
+  font-size: 20px;
+  font-family: "Exo 2", sans-serif;
+  margin: 20px -2px 20px 10px;
+  background-color: #f9f7fe;
+  border: 2px solid #e9d2fd;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border-right: none;
+  border-radius: 50px 0px 0px 50px;
+  font-weight: bolder;
+}
+#form-button {
+  position: relative;
+  padding: 10px;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Exo 2", sans-serif;
+  margin: 20px 10px 20px -2px;
+  background-color: #e9d2fd;
+  border: 2px solid #885df1;
+  padding: 10px 30px;
+  box-sizing: border-box;
+  border-left: none;
+  border-radius: 0px 50px 50px 0px;
+  font-weight: bolder;
+}
 ul {
   padding: 30px 10px 30px 10px;
 }
