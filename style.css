@@ -162,9 +162,6 @@ li.forecastDays {
   padding-top: 20px;
   border-radius: 20px;
 }
-img.forecastWeekly.humidity {
-  width: 10px;
-}
 div.forecastWeekly {
   max-width: 600px;
   display: block;
@@ -172,46 +169,6 @@ div.forecastWeekly {
 }
 footer {
   text-align: center;
-}
-div.button-container {
-  display: flex;
-  justify-content: center;
-}
-button.daily-button {
-  display: none;
-  position: relative;
-  font-weight: 500;
-  font-size: 25px;
-  font-family: "Exo 2", sans-serif;
-  letter-spacing: 2px;
-  margin-right: -2.4px;
-  margin-top: 20px;
-  line-height: 13px;
-  background-color: #e9d2fd;
-  border: 2px solid #885df1;
-  padding: 10px 30px;
-  box-sizing: border-box;
-  border-right: none;
-  border-radius: 50px 0px 0px 50px;
-  font-weight: bolder;
-}
-button.weekly-button {
-  display: none;
-  position: relative;
-  font-weight: 500;
-  font-size: 25px;
-  font-family: "Exo 2", sans-serif;
-  letter-spacing: 2px;
-  margin-right: -2.4px;
-  margin-top: 20px;
-  line-height: 13px;
-  background-color: #e9d2fd;
-  border: 2px solid #885df1;
-  padding: 10px 30px;
-  box-sizing: border-box;
-  border-left: none;
-  border-radius: 0px 50px 50px 0px;
-  font-weight: bolder;
 }
 button.weekly-button:hover {
   background-color: #885df1;
