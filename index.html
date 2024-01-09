@@ -14,6 +14,8 @@
   </head>
   <body>
     <header>
+      <span class="city">Tomar</span>
+      <br />
       <form>
         <input
           type="search"
@@ -32,13 +34,13 @@
       </form>
     </header>
     <div class="weatherApp-container">
-      <h1>Tomar</h1>
       <div class="weatherDetails">
-        <div class="weatherDetails-emoji">
-          ☀️ <br />
+        <div class="weatherDetails-city">
+          <span class="weatherDetails-emoji"> ☀️ </span> <br />
           <span class="weatherDetails-description">Clear sky</span>
         </div>
         <div class="weatherDetails-temp">
+          <span>TEMPERATURE</span><br />
           <span class="weatherDetails-degrees"
             >12<span class="weatherDetails-celsius">°C</span></span
           >
@@ -48,23 +50,30 @@
       </div>
       <ul class="weatherDetailsExtra">
         <li>
-          Wind
-          <div class="wind-emoji">🌬️</div>
-          <div class="wind-value">2km/h</div>
+          WIND
+
+          <div class="wind-emoji">
+            <img src="images\storm.png" />
+          </div>
+          <div class="wind-value">Weak S/E <br />2km/h</div>
         </li>
 
         <li>
-          Precipitation
-          <div class="precipitation-emoji">💧</div>
+          PRECIPITATION
+          <div class="precipitation-emoji">
+            <img src="images\protection.png" />
+          </div>
           <div class="precipittaion-value">0%</div>
         </li>
         <li>
-          Humidity
-          <div class="humidity-emoji">🌀</div>
+          HUMIDITY
+          <div class="humidity-emoji">
+            <img src="images\humidity (1).png" />
+          </div>
           <div class="humidity-value">65%</div>
         </li>
       </ul>
-      <div class="weatherUpdate-date">Updated, 7 January 2024 at 14:59</div>
+      <div class="weatherUpdate-date">Updated| 7 January 2024 | 14:59</div>
       <div class="forecastDaily"></div>
     </div>
     <div class="forecastDaily-details">Today, Sunday, 7 January 2024</div>

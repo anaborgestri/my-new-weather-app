@@ -48,13 +48,19 @@ h1 {
 }
 .weatherDetails {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px;
   margin: 0 20px 0 20px;
 }
+.city {
+  font-size: 50px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
 .weatherDetails-emoji {
-  font-size: 70px;
-  margin-right: 100px;
+  position: relative;
+  font-size: 100px;
 }
 .weatherDetails-description {
   position: absolute;
@@ -64,11 +70,12 @@ h1 {
 .weatherDetails-temp {
   font-size: 15px;
   font-weight: bold;
-  text-transform: capitalize;
+  color: rgba(39, 33, 66, 0.4);
 }
 .weatherDetails-degrees {
   font-size: 70px;
   font-weight: bold;
+  color: black;
 }
 .weatherDetails-celsius {
   position: absolute;
@@ -77,8 +84,18 @@ h1 {
   margin-top: 10px;
 }
 .weatherDetails-minmax {
+  position: relative;
   font-weight: lighter;
-  margin-left: -30px;
+  color: rgba(39, 33, 66, 0.4);
+  text-align: right;
+}
+.weatherUpdate-date {
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
+  font-weight: bold;
+}
+img {
+  width: 50px;
 }
 ul {
   padding: 30px 10px 30px 10px;
@@ -96,7 +113,10 @@ li {
 ul.weatherDetailsExtra {
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(39, 33, 66, 0.4);
 }
 div.forecastDaily-details {
   background-color: white;
