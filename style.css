@@ -39,7 +39,8 @@ ul.weatherDetailsExtra {
 }
 
 li.forecastDaylyHours {
-  display: inline-block;
+  display: none;
+
   justify-content: space-between;
   list-style: none;
   background-color: white;
@@ -57,7 +58,7 @@ li.precipitation {
   padding: 20px 0px 20px 0px;
 }
 li.forecastDays {
-  display: inline-block;
+  display: none;
   list-style: none;
   background-color: white;
   padding-top: 20px;
@@ -77,6 +78,7 @@ div.button-container {
   justify-content: center;
 }
 button.daily-button {
+  display: none;
   position: relative;
   font-weight: 500;
   font-size: 25px;
@@ -94,6 +96,7 @@ button.daily-button {
   font-weight: bolder;
 }
 button.weekly-button {
+  display: none;
   position: relative;
   font-weight: 500;
   font-size: 25px;
