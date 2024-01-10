@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f7fe;
+  background-color: #e4f1fe;
   font-family: "Exo 2", sans-serif;
 }
 header {
@@ -8,7 +8,9 @@ header {
   display: block;
   margin: 0 auto;
   border-radius: 15px;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: 1px 5px 5px 1px #47505354;
 }
 h1 {
   text-align: center;
@@ -23,8 +25,8 @@ h1 {
   font-size: 15px;
   font-family: "Exo 2", sans-serif;
   margin: 20px -2px 20px 10px;
-  background-color: #f9f7fe;
-  border: 2px solid #e9d2fd;
+  background-color: #e4f1fe;
+  border: 2px solid #8dc6ff;
   padding: 10px 30px;
   box-sizing: border-box;
   border-right: none;
@@ -39,8 +41,8 @@ h1 {
   font-size: 15px;
   font-family: "Exo 2", sans-serif;
   margin: 20px 10px 20px -2px;
-  background-color: #e9d2fd;
-  border: 2px solid #885df1;
+  background-color: #8dc6ff;
+  border: 2px solid #22313f;
   padding: 10px 10px;
   box-sizing: border-box;
   border-left: none;
@@ -51,12 +53,13 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   color: black;
-  margin-left: 50px;
+  margin-left: 20px;
   padding: 10px;
 }
 .weatherDetails {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0px 40px 0px 20px;
 }
 
 .weatherDetails-emoji {
@@ -96,12 +99,14 @@ h1 {
   text-align: center;
   color: rgba(39, 33, 66, 0.4);
   font-weight: bold;
+  padding: 20px;
 }
 img {
   width: 50px;
+  padding: 10px;
 }
 ul {
-  padding: 30px 10px 30px 10px;
+  padding: 30px 5px 30px 5px;
 }
 li {
   list-style: none;
@@ -117,17 +122,17 @@ img.forecastemoji {
   margin: 0 auto;
   border-radius: 15px;
   margin-top: 10px;
+  box-shadow: 1px 5px 5px 1px #47505354;
 }
 ul.weatherDetailsExtra {
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 15px;
   font-weight: bold;
   color: rgba(39, 33, 66, 0.4);
-  margin: 0px 40px 0px 50px;
+  margin: 0px 30px 0px 30px;
 }
-
 li.wind {
   padding: 20px 0px 20px 0px;
 }
@@ -143,9 +148,14 @@ li.forecastDays {
   list-style: none;
   background-color: white;
   padding: 10px 0px;
-  border-radius: 20px;
-  font-size: 12px;
-  margin: 2.7px;
+  border-radius: 15px 15px 0px 0px;
+  border-bottom: 0px;
+  font-size: 11px;
+  margin: 4px;
+  box-shadow: 1px 5px 5px 1px #47505354;
+}
+li.forecastDays.strong {
+  font-size: 15px;
 }
 div.forecastWeekly {
   max-width: 480px;
@@ -153,26 +163,37 @@ div.forecastWeekly {
   margin: 0 auto;
   padding-left: 0px;
 }
+
 .temperature-emoji {
   margin-bottom: 20px;
 }
 .temperature-forecast-max {
   border-style: solid;
-  border-color: #885df1;
+  border-color: #22313f;
   border-right: none;
   border-radius: 5px 0px 0px 5px;
-  background-color: #885df1;
+  background-color: #22313f;
   color: white;
   padding: 2px;
 }
 .temperature-forecast-min {
   border-style: solid;
-  border-color: #e9d2fd;
+  border-color: #e4f1fe;
   border-left: none;
   border-radius: 0px 5px 5px 0px;
-  background-color: #e9d2fd;
+  background-color: #e4f1fe;
   padding: 2px;
 }
+.wind-value {
+  color: rgba(39, 33, 66, 0.4);
+}
+.humidity-value {
+  color: rgba(39, 33, 66, 0.4);
+}
+.precipitation-value {
+  color: rgba(39, 33, 66, 0.4);
+}
 footer {
+  font-size: 10px;
   text-align: center;
 }
