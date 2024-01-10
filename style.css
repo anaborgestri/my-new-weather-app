@@ -107,6 +107,9 @@ li {
   list-style: none;
   text-align: center;
 }
+img.forecastemoji {
+  width: 25px;
+}
 .weatherApp-container {
   background-color: white;
   max-width: 450px;
@@ -124,28 +127,7 @@ ul.weatherDetailsExtra {
   color: rgba(39, 33, 66, 0.4);
   margin: 0px 40px 0px 50px;
 }
-div.forecastDaily-details {
-  max-width: 450px;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  margin-top: 10px;
-}
-ul.forecastDaylyDetails {
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-}
 
-li.forecastDaylyHours {
-  display: none;
-  justify-content: space-between;
-  list-style: none;
-  background-color: white;
-  text-align: center;
-  padding-top: 20px;
-  border-radius: 20px;
-}
 li.wind {
   padding: 20px 0px 20px 0px;
 }
@@ -157,15 +139,39 @@ li.precipitation {
 }
 li.forecastDays {
   display: inline-block;
+  justify-content: space-between;
   list-style: none;
   background-color: white;
-  padding-top: 20px;
+  padding: 10px 0px;
   border-radius: 20px;
+  font-size: 12px;
+  margin: 2.7px;
 }
 div.forecastWeekly {
-  max-width: 600px;
+  max-width: 480px;
   display: block;
   margin: 0 auto;
+  padding-left: 0px;
+}
+.temperature-emoji {
+  margin-bottom: 20px;
+}
+.temperature-forecast-max {
+  border-style: solid;
+  border-color: #885df1;
+  border-right: none;
+  border-radius: 5px 0px 0px 5px;
+  background-color: #885df1;
+  color: white;
+  padding: 2px;
+}
+.temperature-forecast-min {
+  border-style: solid;
+  border-color: #e9d2fd;
+  border-left: none;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #e9d2fd;
+  padding: 2px;
 }
 footer {
   text-align: center;
