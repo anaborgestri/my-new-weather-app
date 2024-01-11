@@ -1,5 +1,5 @@
 function refreshWeather(response) {
-  console.log(response.data.temperature.current);
+  console.log(response.data);
   let cityTemp = response.data.temperature.current;
   let cityTempdegrees = document.querySelector("#temp-degrees");
   cityTempdegrees.innerHTML = Math.round(cityTemp);
