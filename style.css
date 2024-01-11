@@ -40,8 +40,8 @@ header {
   font-family: "Exo 2", sans-serif;
   margin: 20px 10px 20px -2px;
   background-color: #8dc6ff;
-  border: 2px solid #22313f;
-  padding: 10px 10px;
+  border: 2px solid #8dc6ff;
+  padding: 10px 10px 10px 19px;
   box-sizing: border-box;
   border-left: none;
   border-radius: 0px 50px 50px 0px;
@@ -71,7 +71,7 @@ header {
 .weatherDetails-emoji {
   position: absolute;
   font-size: 85px;
-  margin: 10px 0px 0px 5px;
+  margin: 18px 0px 0px 5px;
   padding: 10px 0px 0px 5px;
 }
 .weatherDetails-description {
@@ -128,10 +128,13 @@ ul.weatherDetailsExtra {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   color: rgba(39, 33, 66, 0.4);
   margin: 0px 30px 0px 30px;
+}
+.weatherDetails-value {
+  font-size: 11px;
 }
 li.wind {
   padding: 20px 0px 20px 0px;
@@ -154,8 +157,9 @@ li.forecastDays {
   margin: 4px;
   box-shadow: 1px 5px 5px 1px #47505354;
 }
-li.forecastDays.strong {
+.days {
   font-size: 15px;
+  font-weight: bold;
 }
 div.forecastWeekly {
   max-width: 480px;
@@ -183,15 +187,19 @@ div.forecastWeekly {
   border-radius: 0px 5px 5px 0px;
   background-color: #e4f1fe;
   padding: 2px;
+  margin-left: -2px;
 }
 .wind-value {
   color: rgba(39, 33, 66, 0.4);
+  font-weight: bolder;
 }
 .humidity-value {
   color: rgba(39, 33, 66, 0.4);
+  font-weight: bolder;
 }
 .precipitation-value {
   color: rgba(39, 33, 66, 0.4);
+  font-weight: bolder;
 }
 footer {
   font-size: 10px;
