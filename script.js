@@ -20,7 +20,43 @@ function refreshWeather(response) {
   humidityValue.innerHTML = Math.round(response.data.temperature.humidity);
   let realfeelTemp = document.querySelector("#realFeel");
   realfeelTemp.innerHTML = Math.round(response.data.temperature.feels_like);
+
+  //get the hours and date directly from the API as well to do that we nee to use the tag new Date() and multiply by 1000 see console log below
+  console.log(new Date(response.data.time * 1000));
+  //based on this we can design and structure the date in the app
+  let timeStamp = document.querySelector("#time");
+  let date = new Date(response.data.time * 1000);
+  timeStamp.innerHTML = formatDate(date);
 }
+
+function formatDate(date) {
+  let day = date.getDate();
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let year = date.getFullYear();
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let month = months[date.getMonth()];
+
+  //need to add a condition in case the mnutes are less than 10 to have two digits$
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `Updated | ${day} ${month} ${year} | ${hours}:${minutes}`;
+}
+
 function giveWeather(city) {
   let apiKey = `4c08634eb8b52t7acf769o96f5812f64`;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
