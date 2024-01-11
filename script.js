@@ -15,7 +15,7 @@ function refreshWeather(response) {
   desciptionWeather.innerHTML = response.data.condition.description;
   //add remaining detals, wind, humidity and real feel temp
   let windspeedValue = document.querySelector("#windspeed");
-  windspeedValue.innerHTML = Math.round(response.data.wind.speed);
+  windspeedValue.innerHTML = response.data.wind.speed;
   let humidityValue = document.querySelector("#humidity");
   humidityValue.innerHTML = Math.round(response.data.temperature.humidity);
   let realfeelTemp = document.querySelector("#realFeel");
