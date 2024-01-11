@@ -13,6 +13,13 @@ function refreshWeather(response) {
   //add weather description
   let desciptionWeather = document.querySelector("#description");
   desciptionWeather.innerHTML = response.data.condition.description;
+  //add remaining detals, wind, humidity and real feel temp
+  let windspeedValue = document.querySelector("#windspeed");
+  windspeedValue.innerHTML = Math.round(response.data.wind.speed);
+  let humidityValue = document.querySelector("#humidity");
+  humidityValue.innerHTML = Math.round(response.data.temperature.humidity);
+  let realfeelTemp = document.querySelector("#realFeel");
+  realfeelTemp.innerHTML = Math.round(response.data.temperature.feels_like);
 }
 function giveWeather(city) {
   let apiKey = `4c08634eb8b52t7acf769o96f5812f64`;
