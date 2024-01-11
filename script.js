@@ -10,6 +10,9 @@ function refreshWeather(response) {
   let cityName = document.querySelector(".city");
   cityName.innerHTML = response.data.city;
   //this way independently how the city name is written by the user it will always show up correctly
+  //add weather description
+  let desciptionWeather = document.querySelector("#description");
+  desciptionWeather.innerHTML = response.data.condition.description;
 }
 function giveWeather(city) {
   let apiKey = `4c08634eb8b52t7acf769o96f5812f64`;
