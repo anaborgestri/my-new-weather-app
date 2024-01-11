@@ -72,17 +72,19 @@ header {
   margin-top: 30px;
 }
 span#description {
-  margin-left: 20px;
+  margin-right: 10px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: bold;
   color: rgba(39, 33, 66, 0.6);
 }
-
+span#temp-degrees {
+  margin-left: 30px;
+}
 .weatherDetails-emoji {
   position: relative;
   font-size: 85px;
-  margin: 30px 30px 0px 30px;
+  margin: 30px 30px 0px 20px;
   padding: 10px 10px 0px 5px;
 }
 .weatherDetails-description {

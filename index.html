@@ -37,15 +37,12 @@
       <br />
       <div class="weatherDetails">
         <div class="weatherDetails-city">
-          <span class="weatherDetails-emoji"> 🌦️ </span> <br />
-          <span id="description"></span>
+          <span class="weatherDetails-emoji"> 🌦️ </span>
         </div>
         <div class="weatherDetails-temp">
-          <span>TEMPERATURE</span><br />
           <span class="weatherDetails-degrees" id="temp-degrees"></span>
-          <span class="weatherDetails-celsius">°C</span>
-          <br />
-          <span class="weatherDetails-minmax">Max.: ° Min.: °</span>
+          <span class="weatherDetails-celsius">°C</span><br />
+          <span id="description"></span>
         </div>
       </div>
       <ul class="weatherDetailsExtra">
@@ -54,21 +51,21 @@
             <img src="images\storm.png" />
           </div>
           <span class="weatherDetailsExtra">WIND</span>
-          <div class="weatherDetails-value">Weak S/E <br />2km/h</div>
-        </li>
-        <li>
-          <div class="precipitation-emoji">
-            <img src="images\protection.png" />
-          </div>
-          <span class="weatherDetailsExtra">PRECIPITATION</span>
-          <div class="weatherDetails-value">0%</div>
+          <div class="weatherDetails-value"><span id="wind"></span>km/h</div>
         </li>
         <li>
           <div class="forecastemoji">
             <img src="images\humidity (1).png" />
           </div>
           <span class="weatherDetailsExtra">HUMIDITY</span>
-          <div class="weatherDetails-value">65%</div>
+          <div class="weatherDetails-value"><span id="humidity"></span>%</div>
+        </li>
+        <li>
+          <div class="precipitation-emoji">
+            <img src="images\thermal.png" />
+          </div>
+          <span class="weatherDetailsExtra">REAL FEEL</span>
+          <div class="weatherDetails-value"><span id="realFeel"></span>°</div>
         </li>
       </ul>
       <div class="weatherUpdate-date">Updated| 7 January 2024 | 14:59</div>
