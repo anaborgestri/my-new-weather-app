@@ -12,9 +12,7 @@ header {
   margin-bottom: 20px;
   box-shadow: 1px 5px 5px 1px #47505354;
 }
-h1 {
-  text-align: center;
-}
+
 .weatherForm {
   display: inline-flex;
   font-family: "Exo 2", sans-serif;
@@ -49,22 +47,32 @@ h1 {
   border-radius: 0px 50px 50px 0px;
   font-weight: bolder;
 }
+.weatherApp-container {
+  background-color: white;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 5px 5px 1px #47505354;
+}
 .city {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   color: black;
-  margin-left: 20px;
-  padding: 10px;
+  margin: 40px;
 }
 .weatherDetails {
   display: flex;
   justify-content: space-between;
-  margin: 0px 40px 0px 20px;
+  margin: -20px 30px 0px 20px;
 }
 
 .weatherDetails-emoji {
-  position: relative;
-  font-size: 95px;
+  position: absolute;
+  font-size: 85px;
+  margin: 10px 0px 0px 5px;
+  padding: 10px 0px 0px 5px;
 }
 .weatherDetails-description {
   position: absolute;
@@ -115,15 +123,7 @@ li {
 img.forecastemoji {
   width: 25px;
 }
-.weatherApp-container {
-  background-color: white;
-  max-width: 450px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 15px;
-  margin-top: 10px;
-  box-shadow: 1px 5px 5px 1px #47505354;
-}
+
 ul.weatherDetailsExtra {
   display: flex;
   list-style: none;
