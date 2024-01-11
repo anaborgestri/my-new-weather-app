@@ -20,6 +20,10 @@ function refreshWeather(response) {
   humidityValue.innerHTML = Math.round(response.data.temperature.humidity);
   let realfeelTemp = document.querySelector("#realFeel");
   realfeelTemp.innerHTML = Math.round(response.data.temperature.feels_like);
+  let icon = document.querySelector("#icon");
+  icon.innerHTML = `<img
+            src=${response.data.condition.icon_url}
+                      class="weatherDetails-emoji"/> `;
 
   //get the hours and date directly from the API as well to do that we nee to use the tag new Date() and multiply by 1000 see console log below
   console.log(new Date(response.data.time * 1000));
