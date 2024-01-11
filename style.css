@@ -111,12 +111,6 @@ span#temp-degrees {
   margin-top: 15px;
   color: black;
 }
-.weatherDetails-minmax {
-  position: relative;
-  font-weight: lighter;
-  color: rgba(39, 33, 66, 0.6);
-  text-align: right;
-}
 .weatherUpdate-date {
   text-align: center;
   color: rgba(39, 33, 66, 0.6);
